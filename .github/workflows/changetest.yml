@@ -21,18 +21,13 @@ jobs:
         with:
           fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
 
-      - name: Check for change in docs folder
-        id: changed-documentation
-        uses: tj-actions/changed-files@v35
-        with:
-          files: documentation  # Alternatively using: `docs/**` or `docs`
       - name: 🔎 Check if files besides docs have changed
         id: changed-files
         uses: tj-actions/changed-files@v35
         with:
           files_ignore: documentation
       - name: Update to AWS if files besides docs have changed
-        if: steps.changed-documentation.outputs.any_changed == 'false' && steps.changed-files.outputs.any_changed == 'true'
+        if: steps.changed-files.outputs.any_changed == 'true'
         run: |
           echo "One or more files besides the folder has changed."
           echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
