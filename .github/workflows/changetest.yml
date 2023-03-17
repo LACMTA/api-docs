@@ -32,7 +32,7 @@ jobs:
         with:
           files_ignore: documentation
       - name: Update to AWS if files besides docs have changed
-        if: steps.changed-files-specific.outputs.any_changed == 'false' and steps.changed-files.outputs.any_changed == 'false'
+        if: steps.changed-files-specific.outputs.any_changed == 'false' && steps.changed-files.outputs.any_changed == 'false'
         run: |
           echo "One or more files besides the folder has changed."
           echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
