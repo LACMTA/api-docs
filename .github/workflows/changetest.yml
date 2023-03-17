@@ -1,0 +1,27 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: 
+  push:
+    branches: [ main ]
+jobs:
+  name: Test changed-files
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Check for change in docs folder
+        id: changed-files-specific
+        uses: tj-actions/changed-files@v35
+        with:
+          files: docs/*.{js,html}  # Alternatively using: `docs/**` or `docs`
+      - name: 🔎 Check if files besides docs have changed
+        id: changed-files
+        uses: tj-actions/changed-files@v35
+        with:
+          files_ignore: docs
+      - name: Update to AWS if files besides docs have changed
+        if: steps.changed-files-specific.outputs.any_changed == 'false' and steps.changed-files.outputs.any_changed == 'false'
+        run: |
+          echo "One or more files besides the folder has changed."
+          echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
+            
