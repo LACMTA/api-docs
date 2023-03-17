@@ -1,14 +1,26 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: 
+name: CI
+
+on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+# -------------------------------------------------------------------------------------------------------------------------
+# Event `push`: Compare the preceeding commit -> to the current commit of the main branch.
+# Event `pull_request`: Compare the last commit of main -> to the current commit of a Pull Request branch.
+# -------------------------------------------------------------------------------------------------------------------------
+
 jobs:
-  name: Test changed-files
+  build:
+    runs-on: ubuntu-latest  # windows-latest | macos-latest
+    name: Test changed-files
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+
       - name: Check for change in docs folder
         id: changed-files-specific
         uses: tj-actions/changed-files@v35
