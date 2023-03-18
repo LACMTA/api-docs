@@ -1,0 +1,95 @@
+{
+  "unversionedId": "petstore/index-get",
+  "id": "petstore/index-get",
+  "title": "Index",
+  "description": "Index",
+  "source": "@site/docs/petstore/index-get.api.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/index-get",
+  "permalink": "/docs/petstore/index-get",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "index-get",
+    "title": "Index",
+    "description": "Index",
+    "sidebar_label": "Index",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": {
+      "operationId": "index__get",
+      "responses": {
+        "200": {
+          "content": {
+            "text/html": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "Successful Response"
+        }
+      },
+      "description": "Index",
+      "method": "get",
+      "path": "/",
+      "servers": [
+        {
+          "url": "https://api.metro.net"
+        }
+      ],
+      "securitySchemes": {
+        "OAuth2PasswordBearer": {
+          "flows": {
+            "password": {
+              "scopes": {},
+              "tokenUrl": "token"
+            }
+          },
+          "type": "oauth2"
+        }
+      },
+      "info": {
+        "title": "FastAPI",
+        "version": "0.1.0"
+      },
+      "postman": {
+        "name": "Index",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            ""
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html"
+          }
+        ],
+        "method": "GET"
+      }
+    },
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/petstore/fastapi",
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Verify Email Route",
+    "permalink": "/docs/petstore/verify-email-route-verify-email-email-verification-token-get"
+  },
+  "next": {
+    "title": "Get Time",
+    "permalink": "/docs/petstore/get-time-time-get"
+  }
+}

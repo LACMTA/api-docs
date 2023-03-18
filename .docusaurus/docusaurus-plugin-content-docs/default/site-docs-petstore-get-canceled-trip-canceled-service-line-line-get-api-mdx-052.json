@@ -1,0 +1,170 @@
+{
+  "unversionedId": "petstore/get-canceled-trip-canceled-service-line-line-get",
+  "id": "petstore/get-canceled-trip-canceled-service-line-line-get",
+  "title": "Get Canceled Trip",
+  "description": "Get Canceled Trip",
+  "source": "@site/docs/petstore/get-canceled-trip-canceled-service-line-line-get.api.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/get-canceled-trip-canceled-service-line-line-get",
+  "permalink": "/docs/petstore/get-canceled-trip-canceled-service-line-line-get",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-canceled-trip-canceled-service-line-line-get",
+    "title": "Get Canceled Trip",
+    "description": "Get Canceled Trip",
+    "sidebar_label": "Get Canceled Trip",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": {
+      "operationId": "get_canceled_trip_canceled_service_line__line__get",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "line",
+          "required": true,
+          "schema": {
+            "title": "Line",
+            "type": "string"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          },
+          "description": "Successful Response"
+        },
+        "422": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "detail": {
+                    "items": {
+                      "properties": {
+                        "loc": {
+                          "items": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "integer"
+                              }
+                            ]
+                          },
+                          "title": "Location",
+                          "type": "array"
+                        },
+                        "msg": {
+                          "title": "Message",
+                          "type": "string"
+                        },
+                        "type": {
+                          "title": "Error Type",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "loc",
+                        "msg",
+                        "type"
+                      ],
+                      "title": "ValidationError",
+                      "type": "object"
+                    },
+                    "title": "Detail",
+                    "type": "array"
+                  }
+                },
+                "title": "HTTPValidationError",
+                "type": "object"
+              }
+            }
+          },
+          "description": "Validation Error"
+        }
+      },
+      "tags": [
+        "Real-Time data"
+      ],
+      "description": "Get Canceled Trip",
+      "method": "get",
+      "path": "/canceled_service/line/{line}",
+      "servers": [
+        {
+          "url": "https://api.metro.net"
+        }
+      ],
+      "securitySchemes": {
+        "OAuth2PasswordBearer": {
+          "flows": {
+            "password": {
+              "scopes": {},
+              "tokenUrl": "token"
+            }
+          },
+          "type": "oauth2"
+        }
+      },
+      "info": {
+        "title": "FastAPI",
+        "version": "0.1.0"
+      },
+      "postman": {
+        "name": "Get Canceled Trip",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "canceled_service",
+            "line",
+            ":line"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "(Required) ",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "",
+              "key": "line"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET"
+      }
+    },
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/petstore/fastapi",
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Get Canceled Trip",
+    "permalink": "/docs/petstore/get-canceled-trip-canceled-service-all-get"
+  },
+  "next": {
+    "title": "Get Canceled Trip Summary",
+    "permalink": "/docs/petstore/get-canceled-trip-summary-canceled-service-summary-get"
+  }
+}

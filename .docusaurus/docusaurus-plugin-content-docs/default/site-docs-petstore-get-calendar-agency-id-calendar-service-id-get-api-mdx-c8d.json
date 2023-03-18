@@ -1,0 +1,193 @@
+{
+  "unversionedId": "petstore/get-calendar-agency-id-calendar-service-id-get",
+  "id": "petstore/get-calendar-agency-id-calendar-service-id-get",
+  "title": "Get Calendar",
+  "description": "Get Calendar",
+  "source": "@site/docs/petstore/get-calendar-agency-id-calendar-service-id-get.api.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/get-calendar-agency-id-calendar-service-id-get",
+  "permalink": "/docs/petstore/get-calendar-agency-id-calendar-service-id-get",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-calendar-agency-id-calendar-service-id-get",
+    "title": "Get Calendar",
+    "description": "Get Calendar",
+    "sidebar_label": "Get Calendar",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": {
+      "operationId": "get_calendar__agency_id__calendar__service_id__get",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "agency_id",
+          "required": true,
+          "schema": {
+            "description": "An enumeration.",
+            "enum": [
+              "LACMTA",
+              "LACMTA_Rail"
+            ],
+            "title": "AgencyIdEnum",
+            "type": "string"
+          }
+        },
+        {
+          "in": "path",
+          "name": "service_id",
+          "required": true,
+          "schema": {
+            "title": "Service Id"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          },
+          "description": "Successful Response"
+        },
+        "422": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "detail": {
+                    "items": {
+                      "properties": {
+                        "loc": {
+                          "items": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "integer"
+                              }
+                            ]
+                          },
+                          "title": "Location",
+                          "type": "array"
+                        },
+                        "msg": {
+                          "title": "Message",
+                          "type": "string"
+                        },
+                        "type": {
+                          "title": "Error Type",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "loc",
+                        "msg",
+                        "type"
+                      ],
+                      "title": "ValidationError",
+                      "type": "object"
+                    },
+                    "title": "Detail",
+                    "type": "array"
+                  }
+                },
+                "title": "HTTPValidationError",
+                "type": "object"
+              }
+            }
+          },
+          "description": "Validation Error"
+        }
+      },
+      "tags": [
+        "Static data"
+      ],
+      "description": "Get Calendar",
+      "method": "get",
+      "path": "/{agency_id}/calendar/{service_id}",
+      "servers": [
+        {
+          "url": "https://api.metro.net"
+        }
+      ],
+      "securitySchemes": {
+        "OAuth2PasswordBearer": {
+          "flows": {
+            "password": {
+              "scopes": {},
+              "tokenUrl": "token"
+            }
+          },
+          "type": "oauth2"
+        }
+      },
+      "info": {
+        "title": "FastAPI",
+        "version": "0.1.0"
+      },
+      "postman": {
+        "name": "Get Calendar",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            ":agency_id",
+            "calendar",
+            ":service_id"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "(Required) ",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "",
+              "key": "agency_id"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "(Required) ",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "",
+              "key": "service_id"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET"
+      }
+    },
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/petstore/fastapi",
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Get Agency",
+    "permalink": "/docs/petstore/get-agency-agency-id-agency-get"
+  },
+  "next": {
+    "title": "Get Routes",
+    "permalink": "/docs/petstore/get-routes-agency-id-route-overview-get"
+  }
+}

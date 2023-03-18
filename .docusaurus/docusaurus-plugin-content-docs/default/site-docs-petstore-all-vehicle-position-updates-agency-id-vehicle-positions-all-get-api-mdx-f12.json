@@ -1,0 +1,191 @@
+{
+  "unversionedId": "petstore/all-vehicle-position-updates-agency-id-vehicle-positions-all-get",
+  "id": "petstore/all-vehicle-position-updates-agency-id-vehicle-positions-all-get",
+  "title": "All Vehicle Position Updates",
+  "description": "All Vehicle Position Updates",
+  "source": "@site/docs/petstore/all-vehicle-position-updates-agency-id-vehicle-positions-all-get.api.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/all-vehicle-position-updates-agency-id-vehicle-positions-all-get",
+  "permalink": "/docs/petstore/all-vehicle-position-updates-agency-id-vehicle-positions-all-get",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "all-vehicle-position-updates-agency-id-vehicle-positions-all-get",
+    "title": "All Vehicle Position Updates",
+    "description": "All Vehicle Position Updates",
+    "sidebar_label": "All Vehicle Position Updates",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": {
+      "operationId": "all_vehicle_position_updates__agency_id__vehicle_positions_all_get",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "agency_id",
+          "required": true,
+          "schema": {
+            "description": "An enumeration.",
+            "enum": [
+              "LACMTA",
+              "LACMTA_Rail"
+            ],
+            "title": "AgencyIdEnum",
+            "type": "string"
+          }
+        },
+        {
+          "in": "query",
+          "name": "geojson",
+          "required": false,
+          "schema": {
+            "default": false,
+            "title": "Geojson",
+            "type": "boolean"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          },
+          "description": "Successful Response"
+        },
+        "422": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "detail": {
+                    "items": {
+                      "properties": {
+                        "loc": {
+                          "items": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "integer"
+                              }
+                            ]
+                          },
+                          "title": "Location",
+                          "type": "array"
+                        },
+                        "msg": {
+                          "title": "Message",
+                          "type": "string"
+                        },
+                        "type": {
+                          "title": "Error Type",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "loc",
+                        "msg",
+                        "type"
+                      ],
+                      "title": "ValidationError",
+                      "type": "object"
+                    },
+                    "title": "Detail",
+                    "type": "array"
+                  }
+                },
+                "title": "HTTPValidationError",
+                "type": "object"
+              }
+            }
+          },
+          "description": "Validation Error"
+        }
+      },
+      "tags": [
+        "Real-Time data"
+      ],
+      "description": "All Vehicle Position Updates",
+      "method": "get",
+      "path": "/{agency_id}/vehicle_positions/all",
+      "servers": [
+        {
+          "url": "https://api.metro.net"
+        }
+      ],
+      "securitySchemes": {
+        "OAuth2PasswordBearer": {
+          "flows": {
+            "password": {
+              "scopes": {},
+              "tokenUrl": "token"
+            }
+          },
+          "type": "oauth2"
+        }
+      },
+      "info": {
+        "title": "FastAPI",
+        "version": "0.1.0"
+      },
+      "postman": {
+        "name": "All Vehicle Position Updates",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            ":agency_id",
+            "vehicle_positions",
+            "all"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "geojson",
+              "value": ""
+            }
+          ],
+          "variable": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "(Required) ",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "",
+              "key": "agency_id"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET"
+      }
+    },
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/petstore/fastapi",
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Get Gtfs Rt Trip Updates By Field Name",
+    "permalink": "/docs/petstore/get-gtfs-rt-trip-updates-by-field-name-agency-id-trip-updates-field-name-field-value-get"
+  },
+  "next": {
+    "title": "Vehicle Position Updates",
+    "permalink": "/docs/petstore/vehicle-position-updates-agency-id-vehicle-positions-field-name-field-value-get"
+  }
+}

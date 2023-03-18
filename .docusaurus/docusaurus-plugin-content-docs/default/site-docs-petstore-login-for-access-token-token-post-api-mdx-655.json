@@ -1,0 +1,214 @@
+{
+  "unversionedId": "petstore/login-for-access-token-token-post",
+  "id": "petstore/login-for-access-token-token-post",
+  "title": "Login For Access Token",
+  "description": "Login For Access Token",
+  "source": "@site/docs/petstore/login-for-access-token-token-post.api.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/login-for-access-token-token-post",
+  "permalink": "/docs/petstore/login-for-access-token-token-post",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "login-for-access-token-token-post",
+    "title": "Login For Access Token",
+    "description": "Login For Access Token",
+    "sidebar_label": "Login For Access Token",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": {
+      "operationId": "login_for_access_token_token_post",
+      "requestBody": {
+        "content": {
+          "application/x-www-form-urlencoded": {
+            "schema": {
+              "properties": {
+                "client_id": {
+                  "title": "Client Id",
+                  "type": "string"
+                },
+                "client_secret": {
+                  "title": "Client Secret",
+                  "type": "string"
+                },
+                "grant_type": {
+                  "pattern": "password",
+                  "title": "Grant Type",
+                  "type": "string"
+                },
+                "password": {
+                  "title": "Password",
+                  "type": "string"
+                },
+                "scope": {
+                  "default": "",
+                  "title": "Scope",
+                  "type": "string"
+                },
+                "username": {
+                  "title": "Username",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "username",
+                "password"
+              ],
+              "title": "Body_login_for_access_token_token_post",
+              "type": "object"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "access_token": {
+                    "title": "Access Token",
+                    "type": "string"
+                  },
+                  "token_type": {
+                    "title": "Token Type",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "access_token",
+                  "token_type"
+                ],
+                "title": "Token",
+                "type": "object"
+              }
+            }
+          },
+          "description": "Successful Response"
+        },
+        "422": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "detail": {
+                    "items": {
+                      "properties": {
+                        "loc": {
+                          "items": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "integer"
+                              }
+                            ]
+                          },
+                          "title": "Location",
+                          "type": "array"
+                        },
+                        "msg": {
+                          "title": "Message",
+                          "type": "string"
+                        },
+                        "type": {
+                          "title": "Error Type",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "loc",
+                        "msg",
+                        "type"
+                      ],
+                      "title": "ValidationError",
+                      "type": "object"
+                    },
+                    "title": "Detail",
+                    "type": "array"
+                  }
+                },
+                "title": "HTTPValidationError",
+                "type": "object"
+              }
+            }
+          },
+          "description": "Validation Error"
+        }
+      },
+      "tags": [
+        "User Methods"
+      ],
+      "description": "Login For Access Token",
+      "method": "post",
+      "path": "/token",
+      "servers": [
+        {
+          "url": "https://api.metro.net"
+        }
+      ],
+      "securitySchemes": {
+        "OAuth2PasswordBearer": {
+          "flows": {
+            "password": {
+              "scopes": {},
+              "tokenUrl": "token"
+            }
+          },
+          "type": "oauth2"
+        }
+      },
+      "info": {
+        "title": "FastAPI",
+        "version": "0.1.0"
+      },
+      "postman": {
+        "name": "Login For Access Token",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "token"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": []
+        }
+      }
+    },
+    "sidebar_class_name": "post api-method",
+    "info_path": "docs/petstore/fastapi",
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Login",
+    "permalink": "/docs/petstore/login-login-get"
+  },
+  "next": {
+    "title": "Create User",
+    "permalink": "/docs/petstore/create-user-users-post"
+  }
+}

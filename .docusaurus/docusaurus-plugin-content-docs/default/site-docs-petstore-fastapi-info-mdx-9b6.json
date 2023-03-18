@@ -1,0 +1,33 @@
+{
+  "unversionedId": "petstore/fastapi",
+  "id": "petstore/fastapi",
+  "title": "FastAPI",
+  "description": "",
+  "source": "@site/docs/petstore/fastapi.info.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/fastapi",
+  "permalink": "/docs/petstore/fastapi",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "fastapi",
+    "title": "FastAPI",
+    "description": "",
+    "sidebar_label": "Introduction",
+    "sidebar_position": 0,
+    "hide_title": true,
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Petstore",
+    "permalink": "/docs/category/petstore-api"
+  },
+  "next": {
+    "title": "Get Calendar Dates From Db",
+    "permalink": "/docs/petstore/get-calendar-dates-from-db-calendar-dates-get"
+  }
+}

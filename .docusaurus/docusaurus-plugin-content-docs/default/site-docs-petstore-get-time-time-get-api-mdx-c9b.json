@@ -1,0 +1,89 @@
+{
+  "unversionedId": "petstore/get-time-time-get",
+  "id": "petstore/get-time-time-get",
+  "title": "Get Time",
+  "description": "Get Time",
+  "source": "@site/docs/petstore/get-time-time-get.api.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/get-time-time-get",
+  "permalink": "/docs/petstore/get-time-time-get",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-time-time-get",
+    "title": "Get Time",
+    "description": "Get Time",
+    "sidebar_label": "Get Time",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": {
+      "operationId": "get_time_time_get",
+      "responses": {
+        "200": {
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          },
+          "description": "Successful Response"
+        }
+      },
+      "description": "Get Time",
+      "method": "get",
+      "path": "/time",
+      "servers": [
+        {
+          "url": "https://api.metro.net"
+        }
+      ],
+      "securitySchemes": {
+        "OAuth2PasswordBearer": {
+          "flows": {
+            "password": {
+              "scopes": {},
+              "tokenUrl": "token"
+            }
+          },
+          "type": "oauth2"
+        }
+      },
+      "info": {
+        "title": "FastAPI",
+        "version": "0.1.0"
+      },
+      "postman": {
+        "name": "Get Time",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "time"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET"
+      }
+    },
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/petstore/fastapi",
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Index",
+    "permalink": "/docs/petstore/index-get"
+  }
+}

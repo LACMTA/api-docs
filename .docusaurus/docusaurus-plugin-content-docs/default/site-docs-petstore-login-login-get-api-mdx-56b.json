@@ -1,0 +1,98 @@
+{
+  "unversionedId": "petstore/login-login-get",
+  "id": "petstore/login-login-get",
+  "title": "Login",
+  "description": "Login",
+  "source": "@site/docs/petstore/login-login-get.api.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/login-login-get",
+  "permalink": "/docs/petstore/login-login-get",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "login-login-get",
+    "title": "Login",
+    "description": "Login",
+    "sidebar_label": "Login",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": {
+      "operationId": "login_login_get",
+      "responses": {
+        "200": {
+          "content": {
+            "text/html": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "Successful Response"
+        }
+      },
+      "tags": [
+        "User Methods"
+      ],
+      "description": "Login",
+      "method": "get",
+      "path": "/login",
+      "servers": [
+        {
+          "url": "https://api.metro.net"
+        }
+      ],
+      "securitySchemes": {
+        "OAuth2PasswordBearer": {
+          "flows": {
+            "password": {
+              "scopes": {},
+              "tokenUrl": "token"
+            }
+          },
+          "type": "oauth2"
+        }
+      },
+      "info": {
+        "title": "FastAPI",
+        "version": "0.1.0"
+      },
+      "postman": {
+        "name": "Login",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "login"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html"
+          }
+        ],
+        "method": "GET"
+      }
+    },
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/petstore/fastapi",
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Get Gopass Schools",
+    "permalink": "/docs/petstore/get-gopass-schools-get-gopass-schools-get"
+  },
+  "next": {
+    "title": "Login For Access Token",
+    "permalink": "/docs/petstore/login-for-access-token-token-post"
+  }
+}

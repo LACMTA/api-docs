@@ -1,0 +1,244 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "petstore/all-trip-updates-updates-agency-id-trip-updates-all-get",
+              "path": "/docs/petstore/all-trip-updates-updates-agency-id-trip-updates-all-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/all-vehicle-position-updates-agency-id-vehicle-positions-all-get",
+              "path": "/docs/petstore/all-vehicle-position-updates-agency-id-vehicle-positions-all-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/create-user-users-post",
+              "path": "/docs/petstore/create-user-users-post",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/fastapi",
+              "path": "/docs/petstore/fastapi",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-agency-agency-id-agency-get",
+              "path": "/docs/petstore/get-agency-agency-id-agency-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-bus-trips-agency-id-trips-trip-id-get",
+              "path": "/docs/petstore/get-bus-trips-agency-id-trips-trip-id-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-calendar-agency-id-calendar-service-id-get",
+              "path": "/docs/petstore/get-calendar-agency-id-calendar-service-id-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-calendar-dates-from-db-calendar-dates-get",
+              "path": "/docs/petstore/get-calendar-dates-from-db-calendar-dates-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-canceled-trip-canceled-service-all-get",
+              "path": "/docs/petstore/get-canceled-trip-canceled-service-all-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-canceled-trip-canceled-service-line-line-get",
+              "path": "/docs/petstore/get-canceled-trip-canceled-service-line-line-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-canceled-trip-summary-canceled-service-summary-get",
+              "path": "/docs/petstore/get-canceled-trip-summary-canceled-service-summary-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-gopass-schools-get-gopass-schools-get",
+              "path": "/docs/petstore/get-gopass-schools-get-gopass-schools-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-gtfs-rt-trip-updates-by-field-name-agency-id-trip-updates-field-name-field-value-get",
+              "path": "/docs/petstore/get-gtfs-rt-trip-updates-by-field-name-agency-id-trip-updates-field-name-field-value-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-routes-agency-id-route-overview-get",
+              "path": "/docs/petstore/get-routes-agency-id-route-overview-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-routes-agency-id-routes-route-id-get",
+              "path": "/docs/petstore/get-routes-agency-id-routes-route-id-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-shapes-agency-id-shapes-shape-id-get",
+              "path": "/docs/petstore/get-shapes-agency-id-shapes-shape-id-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-stop-times-by-route-code-and-agency-agency-id-stop-times-route-code-route-code-get",
+              "path": "/docs/petstore/get-stop-times-by-route-code-and-agency-agency-id-stop-times-route-code-route-code-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-stop-times-by-trip-id-and-agency-agency-id-stop-times-trip-id-trip-id-get",
+              "path": "/docs/petstore/get-stop-times-by-trip-id-and-agency-agency-id-stop-times-trip-id-trip-id-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-stops-agency-id-stops-stop-id-get",
+              "path": "/docs/petstore/get-stops-agency-id-stops-stop-id-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-time-time-get",
+              "path": "/docs/petstore/get-time-time-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-trip-detail-agency-id-trip-detail-vehicle-id-get",
+              "path": "/docs/petstore/get-trip-detail-agency-id-trip-detail-vehicle-id-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/get-trip-shapes-agency-id-trip-shapes-shape-id-get",
+              "path": "/docs/petstore/get-trip-shapes-agency-id-trip-shapes-shape-id-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/index-get",
+              "path": "/docs/petstore/index-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/login-for-access-token-token-post",
+              "path": "/docs/petstore/login-for-access-token-token-post",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/login-login-get",
+              "path": "/docs/petstore/login-login-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/populate-route-stops-agency-id-route-stops-route-code-get",
+              "path": "/docs/petstore/populate-route-stops-agency-id-route-stops-route-code-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/populate-route-stops-grouped-agency-id-route-stops-grouped-route-code-get",
+              "path": "/docs/petstore/populate-route-stops-grouped-agency-id-route-stops-grouped-route-code-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/read-user-users-username-get",
+              "path": "/docs/petstore/read-user-users-username-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/vehicle-position-updates-agency-id-vehicle-positions-field-name-field-value-get",
+              "path": "/docs/petstore/vehicle-position-updates-agency-id-vehicle-positions-field-name-field-value-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "petstore/verify-email-route-verify-email-email-verification-token-get",
+              "path": "/docs/petstore/verify-email-route-verify-email-email-verification-token-get",
+              "sidebar": "openApiSidebar"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/tutorial-basics/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial-basics/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/tutorial-basics/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/tutorial-basics/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial-basics/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---basics",
+              "path": "/docs/category/tutorial---basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---extras",
+              "path": "/docs/category/tutorial---extras",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/petstore-api",
+              "path": "/docs/category/petstore-api",
+              "sidebar": "openApiSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            },
+            "openApiSidebar": {
+              "link": {
+                "path": "/docs/category/petstore-api",
+                "label": "Petstore"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
