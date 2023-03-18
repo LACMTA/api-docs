@@ -24,12 +24,12 @@ jobs:
         id: changed-documentation
         uses: tj-actions/changed-files@v35
         with:
-          files: documentation
+          files: mono
       - name: 🔎 Check if files besides docs have changed
         id: changed-files
         uses: tj-actions/changed-files@v35
         with:
-          files_ignore: documentation
+          files_ignore: mono
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
