@@ -40,4 +40,5 @@ jobs:
         working-directory: ./mono
         run: yarn install
       - name: Test build website
+        working-directory: ./mono
         run: yarn build
