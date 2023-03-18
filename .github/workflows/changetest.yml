@@ -31,15 +31,14 @@ jobs:
         with:
           files_ignore: mono
       - uses: actions/checkout@v3
-        working-directory: ./mono
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: yarn
           cache-dependency-path: "./mono/package.json"
       - name: Install dependencies
-        
+        working-directory: ./mono
         run: yarn install
       - name: Test build website
-        # working-directory: ./mono
+        working-directory: ./mono
         run: yarn build

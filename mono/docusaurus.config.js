@@ -6,18 +6,18 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Metro API",
+  tagline: "Go Metro",
+  url: "https://api.metro.net",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "LACMTA", // Usually your GitHub org/user name.
+  projectName: "metro-api-v2", // Usually your repo name.
 
   presets: [
     [
@@ -69,10 +69,10 @@ const config = {
         }
       },
       navbar: {
-        title: "My Site",
+        title: "Metro API",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg"
+          alt: "Metro API Logo",
+          src: "img/favicon.png"
         },
         items: [
           {
@@ -85,7 +85,7 @@ const config = {
           {
             label: "API",
             position: "left",
-            to: "/docs/category/api"
+            to: "/docs/api"
           },
           {
             href: "https://github.com/facebook/docusaurus",
@@ -102,7 +102,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro"
+                to: "/intro"
               }
             ]
           },
