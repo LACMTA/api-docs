@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
-          cache-dependency-path: "**/package.json"
+          cache-dependency-path: "./mono/package.json"
       - name: Install dependencies
         working-directory: ./mono
         run: yarn install
